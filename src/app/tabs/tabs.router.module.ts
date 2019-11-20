@@ -37,6 +37,48 @@ const routes: Routes = [
           }
         ]
       },
+     
+      {
+        path: 'tab4',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../ata/ata.module').then(m => m.AtaPageModule)
+          }
+        ]
+      },
+      {
+        path: 'tab5',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../conta/register/register.module').then(m => m.RegisterPageModule)
+          }
+        ]
+      },
+      {
+        path: 'tab6',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../agenda/agenda.module').then(m => m.AgendaPageModule)
+          }
+        ]
+      },
+      {
+        path: 'tab7',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../usuarios/usuarios.module').then(m => m.UsuariosPageModule)
+          }
+        ]
+      },
+     
       {
         path: '',
         redirectTo: '/tabs/tab1',

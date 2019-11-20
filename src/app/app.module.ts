@@ -11,14 +11,14 @@ import { AppComponent } from './app.component';
 import { ReunioesPageModule } from './reunioes/reunioes.module';
 import { HomePageModule } from './home/home.module';
 import { LoginPageModule } from './conta/login/login.module';
-
+import { UsuariosPageModule } from './usuarios/usuarios.module';
 
 
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HomePageModule,ReunioesPageModule, LoginPageModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HomePageModule,ReunioesPageModule, LoginPageModule, UsuariosPageModule],
   providers: [
     StatusBar,
     SplashScreen,

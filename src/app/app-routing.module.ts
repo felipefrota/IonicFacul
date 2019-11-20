@@ -8,9 +8,14 @@ const routes: Routes = [
   },
   { path: 'reunioes', loadChildren: './reunioes/reunioes.module#ReunioesPageModule' },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
-  { path: 'conta', loadChildren: './conta/conta.module#ContaPageModule' },
-  { path: 'cadastro', loadChildren: './conta/cadastro/cadastro.module#CadastroPageModule' },
-  { path: 'login', loadChildren: './conta/login/login.module#LoginPageModule' }
+
+  { path: 'login', loadChildren: './conta/login/login.module#LoginPageModule' },
+  { path: 'ata', loadChildren: './ata/ata.module#AtaPageModule' },
+  { path: 'register', loadChildren: './conta/register/register.module#RegisterPageModule' },
+  { path: 'login', loadChildren: './conta/login/login.module#LoginPageModule' },
+  { path: 'agenda', loadChildren: './agenda/agenda.module#AgendaPageModule' },
+  { path: 'usuarios', loadChildren: './usuarios/usuarios.module#UsuariosPageModule' },
+ 
 ];
 @NgModule({
   imports: [
